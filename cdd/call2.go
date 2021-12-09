@@ -26,7 +26,7 @@ func CallContractWithAbi(client *ethclient.Client, privKey *ecdsa.PrivateKey, fr
 		return "", err
 	}
 	// function data
-	abiData, err := ioutil.ReadFile("./cdd/abi.txt")
+	abiData, err := ioutil.ReadFile("./cdd/cdd1.abi")
 	if err != nil {
 		fmt.Println("read file: ", err)
 		return "", err
