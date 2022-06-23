@@ -1,4 +1,4 @@
-package cdd
+package call2
 
 import (
 	"bytes"
@@ -26,7 +26,7 @@ func CallContractWithAbi(client *ethclient.Client, privKey *ecdsa.PrivateKey, fr
 		return "", err
 	}
 	// function data
-	abiData, err := ioutil.ReadFile("./cdd/cdd1.abi")
+	abiData, err := ioutil.ReadFile("./call2/call2.abi")
 	if err != nil {
 		fmt.Println("read file: ", err)
 		return "", err
